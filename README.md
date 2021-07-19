@@ -1,11 +1,9 @@
-[![Slam](https://telegra.ph/file/019996f816db9ed576cff.jpg)](https://t.me/request_ayush)
-
-owner of this repo :- [AYUSH](https://github.com/ayushteke)
-
-contact me :- [AYUSH](https://t.me/request_ayush)
+![Slam](https://telegra.ph/file/019996f816db9ed576cff.jpg)
 
 # Slam Mirror Bot
 This is a telegram bot writen in python for mirroring files on the internet to our beloved Google Drive.
+
+<b> Modded Repo </b>
 
 ## Deploying on Heroku
 Give Star & Fork this repo, then upload **token.pickle** & **credentials.json** to your forks
@@ -44,37 +42,13 @@ after this click on the below button 👇👇👇👇
 - Custom Filename (Only for url, telegram files and ytdl. Not for mega links and magnet/torrents)
 - Speedtest with picture results
 - Extracting password protected files and using custom filename see these examples:
-- [custom file name examples ](https://telegra.ph/Magneto-Python-Aria---Custom-Filename-Examples-01-20)
+- [Custom file name examples ](https://telegra.ph/Magneto-Python-Aria---Custom-Filename-Examples-01-20)
 - Bot can extract the following types of files
 ```
 ZIP, RAR, TAR, 7z, ISO, WIM, CAB, GZIP, BZIP2, 
 APM, ARJ, CHM, CPIO, CramFS, DEB, DMG, FAT, 
 HFS, LZH, LZMA, LZMA2, MBR, MSI, MSLZ, NSIS, 
 NTFS, RPM, SquashFS, UDF, VHD, XAR, Z.
-```
-
-</details>
-
-## How to deploy on vps ?
-Deploying is pretty much straight forward and is divided into several steps as follows:
-
-## Installing requirements
-
-- Clone this repo:
-```
-git clone https://github.com/ayushteke/slam_aria_mirror_bot_HEROKU/
-cd slam_aria_mirror_bot_HEROKU
-```
-
-- Install requirements
-For Debian based distros
-```
-sudo apt install python3
-sudo snap install docker 
-```
-- For Arch and it's derivatives:
-```
-sudo pacman -S docker python
 ```
 
 ## Setting up config file
@@ -164,70 +138,64 @@ Three buttons are already added of Drive Link, Index Link, and View Link, you ca
 python3 generate_drive_token.py
 ```
 
-## Deploying on vps
+<b> Bot commands will be set automatically </b>
+                 oR 
 
-- Start docker daemon (skip if already running):
-```
-sudo dockerd
-```
-- Build Docker image:
-```
-sudo docker build . -t mirrorbot
-```
-- Run the image:
-```
-sudo docker run mirrorbot
-```
+mirror - 🚀 /mirror DL or 🧲 self.
 
+unzip - For Zipped file get unzip mirror.
 
-## bot commands will be set automatically 
+tar - 🤐 upload.
 
+cancel - cancel ID.
 
-## some of the commands are changed because the group members use them without any reason 
+cnlall - cancel all.
 
+list - list of mirror.
 
-## Using service accounts for uploading to avoid user rate limit
-For Service Account to work, you must set **USE_SERVICE_ACCOUNTS="True"** in config file or environment variables
-Many thanks to [AutoRClone](https://github.com/xyou365/AutoRclone) for the scripts
-**NOTE**: Using service accounts is only recommended while uploading to a team drive.
+status - status.
 
-## Generate service accounts. [What is service account](https://cloud.google.com/iam/docs/service-accounts)
+auth - Permit a Chat [Owner only]
 
+unauth - impermit a chat [Owner only] 
 
-first enable IAM API from cloud console by Visiting [Google API page](https://console.developers.google.com/apis/library)
+addsudo - Promote to sudo.[Owner only]
 
-Let us create only the service accounts that we need. 
-**Warning**: abuse of this feature is not the aim of this project and we do **NOT** recommend that you make a lot of projects, just one project and 100 sa allow you plenty of use, its also possible that over abuse might get your projects banned by google. 
+rmsudo - Depromote from sudo.[Owner only]
 
-```
-Note: 1 service account can copy around 750gb a day, 1 project can make 100 service accounts so that's 75tb a day, for most users this should easily suffice. 
-```
+mediainfo - Get Detailed info about a media.
 
-`python3 gen_sa_accounts.py --quick-setup 1 --new-only`
+ping - speed test.
 
-A folder named accounts will be created which will contain keys for the service accounts
+restart - restart bot [Owner Only]
 
-**NOTE**: If you have created SAs in past from this script, you can also just re download the keys by running:
-```
-python3 gen_sa_accounts.py --download-keys project_id
-```
+stat - VSP status
 
-## Add all the service accounts to the Team Drive
-- Run:
-```
-python3 add_to_team_drive.py -d SharedTeamDriveSrcID
-```
+hlp - help
 
-## Youtube-dl authentication using .netrc file
-For using your premium accounts in youtube-dl, edit the [.netrc](https://github.com/breakdowns/slam-mirrorbot/blob/master/.netrc) file according to following format:
-```
-machine host login username password my_youtube_password
-```
-where host is the name of extractor (eg. youtube, twitch). Multiple accounts of different hosts can be added each separated by a new line
+log - Get logs [Owner only]
+
+speedtest - speed of VPS
+
+clone - clone G-File or Folder.
+
+count - count files/folders on a 📂. 
+
+watch - Mirror YTDL sites.
+
+tarwatch - 🤐 mirror YTDL
+
+del - Delete a file. 
+
+usage - stats.
+
+copy and paste this to <b> botfather </b>.
+
 
 ## Credits
 
 Thanks to:
+- Victim Soilder 
 - [out386](https://github.com/out386) heavily inspired from telegram bot which is written in JS
 - [Izzy12](https://github.com/lzzy12/) for original repo
 - [Dank-del](https://github.com/Dank-del/) for base repo
