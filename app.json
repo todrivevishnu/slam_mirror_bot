@@ -7,9 +7,9 @@
       "telegram",
       "python"
     ],
-    "repository": "https://github.com/ayushteke/slam_aria_mirror_bot_HEROKU",
-    "website": "https://github.com/ayushteke/slam_aria_mirror_bot_HEROKU",
-    "success_url": "https://t.me/TORRNET_TO_GDRIVE",
+    "repository": "https://github.com/testherokuvictim/slam_mirror_bot",
+    "website": "https://github.com/testherokuvictim/slam_mirror_bot",
+    "success_url": "https://t.me/modrepos",
     "stack": "container",
     "env": {
       "ENV": {
@@ -77,7 +77,7 @@
       },
       "UPSTREAM_REPO": {
         "description": "Link for Bot Upstream Repo, If you want default update, Fill https://github.com/ayushteke/slam_aria_mirror_bot_HEROKU",
-        "value": "https://github.com/ayushteke/slam_aria_mirror_bot_HEROKU",
+        "value": "https://github.com/testherokuvictim/slam_mirror_bot",
         "required": true
       },
       "UPSTREAM_BRANCH": {
